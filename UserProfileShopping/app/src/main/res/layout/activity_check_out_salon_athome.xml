@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.shopping.lifeplay.activity.CheckOutSalonATHomeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white_greyish"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="Personal Detail"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/user"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <EditText
+                        android:id="@+id/user_nameAdd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="name*"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black_text"
+                        android:textSize="16sp" />
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@color/dull_black" />
+
+
+                    <EditText
+                        android:id="@+id/user_emailAdd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Email*"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_text"
+                        android:textColorHint="@color/black_text"
+                        android:textSize="16sp" />
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@color/dull_black" />
+
+                    <EditText
+                        android:id="@+id/user_phoneAdd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Contact no*"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black_text"
+                        android:textSize="16sp" />
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@color/dull_black" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/account_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white_greyish"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="Address Details"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/location"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <EditText
+                        android:id="@+id/editText_city"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/search_icon"
+                        android:gravity="center_vertical"
+                        android:hint="City*"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black_text"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@color/dull_black" />
+
+                    <EditText
+                        android:id="@+id/editText_locality"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/search_icon"
+                        android:gravity="center_vertical"
+                        android:hint="Locality,area or street*"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black_text"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@color/dull_black" />
+
+                    <EditText
+                        android:id="@+id/editText_flatno"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Flat no.,Building name*"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black_text"
+                        android:textSize="16sp" />
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@color/dull_black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+
+                            <EditText
+                                android:id="@+id/editText_pincode"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_vertical"
+                                android:hint="Pin code*"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black_text"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/white_greyish" />
+                        </LinearLayout>
+
+                        <!--<View-->
+                        <!--android:layout_width="@dimen/view_width_small"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/grey_light" />-->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <EditText
+                                android:id="@+id/editText_state"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_vertical"
+                                android:hint="State*"
+                                android:inputType="textCapWords"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black_text"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/dull_black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/editText_landmark"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Landmark (Optional)"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black_text"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="@color/dull_black" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:elevation="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/text_action_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#d2e9125b"
+            android:gravity="center"
+            android:text="GET NOW"
+            android:onClick="goToPaymentMode"
+            android:textColor="@color/gen_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

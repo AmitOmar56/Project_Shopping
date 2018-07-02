@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dealscartLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/companyImage"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            android:src="@color/white_greyish" />
+
+        <LinearLayout
+            android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deal_provider_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Deal Provider"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deal_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="description"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/deal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="Rs. 1500"
+                android:textColor="#4CAF50"
+                android:textSize="@dimen/text_size_xmedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/green_dot"/>
+                <TextView
+                    android:id="@+id/deal_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginRight="10dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/green_dot"/>
+
+                <TextView
+                    android:id="@+id/deals_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expire On-"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/deals_expiry_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="31.03.2018"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_width_small"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_light" />
+</LinearLayout>

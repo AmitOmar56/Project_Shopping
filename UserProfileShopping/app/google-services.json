@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "853554678681",
+    "firebase_url": "https://little-joy.firebaseio.com",
+    "project_id": "little-joy",
+    "storage_bucket": "little-joy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853554678681:android:2d425db5b67b9cb4",
+        "android_client_info": {
+          "package_name": "com.user.userprofileshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853554678681-q598f7pb59eoj53rfias8ff94d7c3it7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.user.userprofileshopping",
+            "certificate_hash": "3cbe6b3f8754cd8826f071441f38157c849fd33c"
+          }
+        },
+        {
+          "client_id": "853554678681-0tl3tcr8so5mn1klbl2chh9al1o634s2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSeAyQm3APf9V9pO2o9eUoGVK6hTHIzEA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853554678681-0tl3tcr8so5mn1klbl2chh9al1o634s2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

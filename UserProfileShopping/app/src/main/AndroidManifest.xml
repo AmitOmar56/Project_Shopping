@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.user.userprofileshopping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.shopping.lifeplay.activity.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shopping.lifeplay.activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shopping.lifeplay.activity.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shopping.lifeplay.activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.shopping.lifeplay.activity.ShoppingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.shopping.lifeplay.activity.ProductDetailActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.CartActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.WishlistActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.SallonAtHomeActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.Subactivity_NewOffer" />
+        <activity android:name="com.shopping.lifeplay.activity.SalonAtHomeData" />
+        <activity android:name="com.shopping.lifeplay.activity.SalonCartActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.OffersDealActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.OffersDealDataActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.OffersdealDiscriptionActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.OffersDealMoreDealsActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.OffersDealCartActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.ProfileActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.ProfileEditActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.ChangePasswordActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.ReferAndEarnActivity" />
+        <activity
+            android:name="com.shopping.lifeplay.activity.HistoryActivity"
+            android:label="My Orders" />
+        <activity
+            android:name="com.shopping.lifeplay.activity.HistoryDetailActivity"
+            android:label="Order Details" />
+        <activity android:name="com.shopping.lifeplay.activity.PaymentModeActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.CheckOutSalonATHomeActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.WalletActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.ForgotPasswordActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.TimeSlotActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.CODActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.ServiceHistoryActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.DealsHistoryActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.ServiceHistoryDetailActivity" />
+        <activity android:name="com.shopping.lifeplay.activity.PaymentModeforDealsActivity">
+
+        </activity>
+        <activity
+            android:name="com.shopping.lifeplay.paymentgatway.InitialScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shopping.lifeplay.paymentgatway.WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shopping.lifeplay.paymentgatway.StatusActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.shopping.lifeplay.activity.OtpActivity"/>
+    </application>
+
+</manifest>

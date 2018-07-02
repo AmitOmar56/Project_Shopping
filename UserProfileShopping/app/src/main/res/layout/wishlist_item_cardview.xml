@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wishlistLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/image_wishlist"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/grey_light"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_weight="1.8"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/wishlistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOTESOL PLUS CREAM"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wishlistDisc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Face &amp; Beauty"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/wishlistPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 1500"
+                android:textColor="#4CAF50"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete_wishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_delete_black_24dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_width_xsmall"
+        android:background="@color/grey_light" />
+</LinearLayout>
+

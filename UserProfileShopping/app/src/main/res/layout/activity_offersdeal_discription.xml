@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.shopping.lifeplay.activity.OffersdealDiscriptionActivity">
+
+    <ScrollView
+        android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/teacherViewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v4.view.ViewPager>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/transparent"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/p_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sonia MakeOver"
+                    android:textColor="@color/gen_black"
+                    android:textSize="@dimen/text_size_large"
+                    android:weightSum="2" />
+
+                <TextView
+                    android:id="@+id/p_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Rs. 405"
+                    android:textColor="@color/gen_black"
+                    android:textSize="20sp"
+                    android:weightSum="2" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_ratings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green_light"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="2dp"
+                    android:text="4.3 *"
+                    android:textColor="@color/gen_white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_ratings_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="50 ratings"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offers Details"
+                    android:textColor="@color/gen_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/service_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Regular Bridal Makeup ( HD)"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/service_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Bridal Makeup HD (International Products) +Advance Hair Styling + Wear Draping"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Offers Price"
+                    android:textColor="@color/gen_black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_width_small"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/grey_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/layout_action1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Price"
+                            android:textColor="@color/gen_black"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/service_fullprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="5dp"
+                            android:text="Rs. 1000"
+                            android:textSize="@dimen/text_size_medium" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_light" />
+
+
+                    <LinearLayout
+                        android:id="@+id/wishlishLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Save"
+                            android:textColor="@color/gen_black"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/discount_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="5dp"
+                            android:text="40%"
+                            android:textSize="@dimen/text_size_medium" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_width_small"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/grey_light" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Timing"
+                    android:textColor="@color/gen_black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/service_timing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/green_dot"
+                    android:drawablePadding="5dp"
+                    android:text="10:00 AM to 8:00pm"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/service_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/green_dot"
+                    android:drawablePadding="5dp"
+                    android:text="Open All 7 Days"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/green_dot"
+                    android:drawablePadding="5dp"
+                    android:text="Offers Valid At Multiple Locations"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Address"
+                    android:textColor="@color/gen_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/merchant_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/location_pink"
+                    android:drawablePadding="5dp"
+                    android:text="Gurgaon-Sector 9"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Service Offered"
+                    android:textColor="@color/gen_black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_width_small"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/grey_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/ac_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/fan_on"
+                            android:weightSum="2" />
+
+                        <TextView
+                            android:id="@+id/ac_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="AC"
+                            android:textColor="@color/gen_black"
+                            android:textSize="@dimen/text_size_medium" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_light" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/wifi_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wifi_off" />
+
+
+                        <TextView
+                            android:id="@+id/wifi_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="WiFi"
+                            android:textColor="@color/gen_black"
+                            android:textSize="@dimen/text_size_medium" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_light" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_action2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/parking_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/car_off" />
+
+                        <TextView
+                            android:id="@+id/parking_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Parking"
+                            android:textColor="@color/gen_black"
+                            android:textSize="@dimen/text_size_medium" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_light" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/home_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_off" />
+
+
+                        <TextView
+                            android:id="@+id/home_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Home Service"
+                            android:textColor="@color/gen_black"
+                            android:textSize="@dimen/text_size_medium" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_width_small"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/grey_light" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Terms and conditions"
+                    android:textColor="@color/gen_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Voucher Valid for 30 days from date of Purchase"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="One voucher valid only one person only"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Voucher cost will not be adjusted in the final bill"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Vouchers will be deal specific and can't be clubbed with any other offer"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="5dp"
+                    android:onClick="goTomoreDeal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="More Deals By Merchant"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/dots_horizontal" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:elevation="30dp"
+        android:onClick="getNow"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/text_action_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="GET NOW"
+            android:textColor="@color/gen_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

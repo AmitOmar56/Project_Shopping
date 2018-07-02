@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shopping.lifeplay.activity.TimeSlotActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/my_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+        </CalendarView>
+
+        <TextView
+            android:id="@+id/time_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_calendar"
+            android:layout_centerHorizontal="true"
+            android:text="Time Selection">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/relative_slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_calendar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/time_slot_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_select"
+                android:layout_marginBottom="5dp"
+                android:padding="30dp">
+            </android.support.v7.widget.RecyclerView>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/next_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="getAddressDetails"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
